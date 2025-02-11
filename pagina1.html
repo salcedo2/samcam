@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Samuel Salcedo Cam | Fotografía Profesional</title>
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <!-- Swiper.js CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="styles1.css">
+</head>
+<body>
+  <!-- Navbar (incluye login) -->
+  <nav class="navbar navbar-expand-lg navbar-dark neon-border">
+    <div class="container d-flex align-items-center justify-content-between">
+      <a class="navbar-brand d-flex align-items-center" href="#">
+        <img src="images/logo-removebg-preview.png" alt="Logo" class="logo-navbar me-2">
+        <span class="brand-text">Samuel Salcedo Cam</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="gallery.html">Galería</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">Acerca de</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+          <!-- Aquí se mostrará "Login" o "Logout" según el estado del dueño -->
+          <li class="nav-item" id="owner-login-item"></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="hero" class="hero">
+    <div class="container text-center">
+      <h1 class="display-4">Captura el Momento Perfecto</h1>
+      <p class="lead">Fotografía profesional para cada ocasión.</p>
+      <a href="#contact" class="btn btn-primary btn-lg me-2">Contáctame</a>
+      <a href="#contact" class="btn btn-primary btn-lg">Servicios</a>
+    </div>
+  </section>
+
+  <!-- Galería -->
+  <section id="galeria" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center mb-4">Galería de Fotografías</h2>
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="images/pixelcut-export.jpg" alt="Foto 1" class="img-fluid">
+          </div>
+          <div class="swiper-slide">
+            <img src="images/pixelcut-export (1).jpg" alt="Foto 2" class="img-fluid">
+          </div>
+          <div class="swiper-slide">
+            <img src="images/g1.jpg" alt="Foto 3" class="img-fluid">
+          </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Acerca de -->
+  <section id="about" class="py-5">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6 mb-3">
+          <h2 class="display-5">Sobre Samuel Salcedo</h2>
+          <p class="lead">
+            Fotógrafo profesional con un enfoque único en capturar momentos auténticos y emocionantes. A lo largo de mi carrera, he trabajado en diferentes áreas de la fotografía, brindando imágenes de alta calidad para todo tipo de eventos.
+          </p>
+        </div>
+        <div class="col-lg-6 text-center">
+          <img src="images/samuel-removebg-preview.png" class="img-fluid rounded-circle shadow-lg" alt="Samuel Salcedo" style="max-width: 250px;">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Promociones -->
+  <section id="promociones" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center mb-4">Promociones</h2>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card">
+            <img src="images/promo1.jpg" class="card-img-top" alt="Promoción 1">
+            <div class="card-body">
+              <h5 class="card-title">Promoción 1</h5>
+              <p class="card-text">Descripción de la promoción 1.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <img src="images/promo2.png" class="card-img-top" alt="Promoción 2">
+            <div class="card-body">
+              <h5 class="card-title">Promoción 2</h5>
+              <p class="card-text">Descripción de la promoción 2.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <img src="images/promo3.jpg" class="card-img-top" alt="Promoción 3">
+            <div class="card-body">
+              <h5 class="card-title">Promoción 3</h5>
+              <p class="card-text">Descripción de la promoción 3.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+ <!-- Eventos (Slider con slides cuadrados y vertical con efecto creative) -->
+<section id="eventos" class="py-5">
+  <div class="container">
+    <h2 class="text-center mb-4">Eventos</h2>
+    <div class="swiper eventsSwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="images/evento1.jpg" alt="Evento 1" class="img-fluid">
+        </div>
+        <div class="swiper-slide">
+          <img src="images/evento2.jpg" alt="Evento 2" class="img-fluid">
+        </div>
+        <div class="swiper-slide">
+          <img src="images/evento3.jpg" alt="Evento 3" class="img-fluid">
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+    </div>
+  </div>
+</section>
+
+
+  <!-- Testimonios (con persistencia) -->
+  <section id="testimonios" class="testimonials-section py-5">
+    <div class="container">
+      <h2 class="text-center mb-4">Testimonios</h2>
+      <!-- Los testimonios guardados se cargarán aquí -->
+      <div class="d-flex justify-content-end mt-4">
+        <button class="btn btn-secondary" id="add-testimonial-btn" data-bs-toggle="modal" data-bs-target="#testimonialModal">
+          Añadir un nuevo testimonio
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Modal para añadir testimonio -->
+  <div class="modal fade" id="testimonialModal" tabindex="-1" aria-labelledby="testimonialModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <form id="testimonialForm">
+          <div class="modal-header">
+            <h5 class="modal-title" id="testimonialModalLabel">Añadir Testimonio</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+          </div>
+          <div class="modal-body">
+            <!-- Nombre -->
+            <div class="mb-3">
+              <label for="testimonialName" class="form-label">Nombre</label>
+              <input type="text" class="form-control" id="testimonialName" required>
+            </div>
+            <!-- Imagen por URL -->
+            <div class="mb-3">
+              <label for="testimonialPhoto" class="form-label">Foto (URL)</label>
+              <input type="text" class="form-control" id="testimonialPhoto" placeholder="Ingresa la URL de la foto">
+            </div>
+            <!-- Subir imagen desde dispositivo -->
+            <div class="mb-3">
+              <label for="testimonialFile" class="form-label">Subir imagen (JPG, PNG, etc.)</label>
+              <input type="file" class="form-control" id="testimonialFile" accept="image/*">
+            </div>
+            <!-- Calificación -->
+            <div class="mb-3">
+              <label class="form-label">Calificación</label>
+              <div class="star-rating">
+                <input type="radio" id="star5" name="rating" value="5" required>
+                <label for="star5" title="5 estrellas"><i class="fas fa-star"></i></label>
+                <input type="radio" id="star4" name="rating" value="4">
+                <label for="star4" title="4 estrellas"><i class="fas fa-star"></i></label>
+                <input type="radio" id="star3" name="rating" value="3">
+                <label for="star3" title="3 estrellas"><i class="fas fa-star"></i></label>
+                <input type="radio" id="star2" name="rating" value="2">
+                <label for="star2" title="2 estrellas"><i class="fas fa-star"></i></label>
+                <input type="radio" id="star1" name="rating" value="1">
+                <label for="star1" title="1 estrella"><i class="fas fa-star"></i></label>
+              </div>
+            </div>
+            <!-- Testimonio -->
+            <div class="mb-3">
+              <label for="testimonialText" class="form-label">Testimonio</label>
+              <textarea class="form-control" id="testimonialText" rows="3" placeholder="Escribe tu testimonio" required></textarea>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+            <button type="submit" class="btn btn-primary">Guardar Testimonio</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal para login de propietario -->
+  <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <form id="loginForm">
+          <div class="modal-header">
+            <h5 class="modal-title" id="loginModalLabel">Login de propietario</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+          </div>
+          <div class="modal-body">
+            <div class="mb-3">
+              <label for="loginUsername" class="form-label">Usuario</label>
+              <input type="text" class="form-control" id="loginUsername" required>
+            </div>
+            <div class="mb-3">
+              <label for="loginPassword" class="form-label">Contraseña</label>
+              <input type="password" class="form-control" id="loginPassword" required>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+            <button type="submit" class="btn btn-primary">Iniciar sesión</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- Preguntas Frecuentes -->
+  <section id="faq" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center mb-4">Preguntas Frecuentes</h2>
+      <div class="accordion" id="faqAccordion">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="faqHeadingOne">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapseOne" aria-expanded="true" aria-controls="faqCollapseOne">
+              ¿Qué servicios ofrece Samuel Salcedo?
+            </button>
+          </h2>
+          <div id="faqCollapseOne" class="accordion-collapse collapse show" aria-labelledby="faqHeadingOne" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              Ofrecemos servicios de fotografía profesional para eventos, retratos, bodas y más.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="faqHeadingTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapseTwo" aria-expanded="false" aria-controls="faqCollapseTwo">
+              ¿Cómo puedo reservar una sesión?
+            </button>
+          </h2>
+          <div id="faqCollapseTwo" class="accordion-collapse collapse" aria-labelledby="faqHeadingTwo" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              Puedes contactarnos a través del formulario de contacto o por teléfono para agendar una sesión.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="faqHeadingThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapseThree" aria-expanded="false" aria-controls="faqCollapseThree">
+              ¿Ofrecen paquetes promocionales?
+            </button>
+          </h2>
+          <div id="faqCollapseThree" class="accordion-collapse collapse" aria-labelledby="faqHeadingThree" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              Sí, contamos con varios paquetes y promociones según la temporada y el evento.
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Contenedor para mostrar la pregunta seleccionada (persistente) -->
+      <div id="faq-selected" class="mt-4"></div>
+    </div>
+  </section>
+  <!-- Footer -->
+  <footer class="text-center py-4 bg-dark text-white">
+    <div class="container">
+      <p>&copy; 2025 Samuel Salcedo | Todos los derechos reservados</p>
+      <div>
+        <a href="https://www.facebook.com/profile.php?id=61550016309912" class="text-white mx-3">
+          <i class="fab fa-facebook"></i>
+        </a>
+        <a href="#" class="text-white mx-3">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a href="#" class="text-white mx-3">
+          <i class="fab fa-instagram"></i>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Botones flotantes -->
+  <div class="floating-buttons">
+    <a href="https://wa.me/tu-numero" target="_blank" class="whatsapp-btn">
+      <img src="images/whaa.png" alt="WhatsApp">
+    </a>
+    <a href="https://www.facebook.com/tu-pagina" target="_blank" class="facebook-btn">
+      <img src="images/mess.png" alt="Facebook">
+    </a>
+  </div>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

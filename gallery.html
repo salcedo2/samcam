@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Galería de Imágenes - Mi Portfolio</title>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
+  <!-- Bootstrap CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">Mi Portfolio</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" 
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="index.html">Inicio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#proyectos">Proyectos</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="container mt-4">
+    <!-- Sección: Galería de Imágenes -->
+    <section id="galeria">
+      <h2 class="mb-4">Galería de Imágenes</h2>
+      <!-- Filtros de Categoría y botón Agregar Foto -->
+      <div class="mb-3 d-flex align-items-center flex-wrap">
+        <button class="btn btn-secondary btn-filter mr-2" data-filter="retratos">Retratos</button>
+        <button class="btn btn-secondary btn-filter mr-2" data-filter="paisajes">Paisajes</button>
+        <button class="btn btn-secondary btn-filter mr-2" data-filter="eventos">Eventos</button>
+        <button class="btn btn-success" data-toggle="modal" data-target="#addPhotoModal">Agregar Foto</button>
+      </div>
+      
+      <!-- Sección para Retratos -->
+      <div id="section-retratos" class="gallery-section">
+        <div class="row">
+          <!-- Ejemplo de imágenes predefinidas para retratos -->
+          <div class="col-md-4 mb-4">
+            <div class="card">
+              <img src="https://via.placeholder.com/350x200?text=Retrato+1" class="card-img-top gallery-img" alt="Retrato 1">
+              <div class="card-body">
+                <h5 class="card-title">Retrato 1</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="card">
+              <img src="https://via.placeholder.com/350x200?text=Retrato+2" class="card-img-top gallery-img" alt="Retrato 2">
+              <div class="card-body">
+                <h5 class="card-title">Retrato 2</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Sección para Paisajes -->
+      <div id="section-paisajes" class="gallery-section">
+        <div class="row">
+          <!-- Ejemplo de imágenes predefinidas para paisajes -->
+          <div class="col-md-4 mb-4">
+            <div class="card">
+              <img src="https://via.placeholder.com/350x200?text=Paisaje+1" class="card-img-top gallery-img" alt="Paisaje 1">
+              <div class="card-body">
+                <h5 class="card-title">Paisaje 1</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="card">
+              <img src="https://via.placeholder.com/350x200?text=Paisaje+2" class="card-img-top gallery-img" alt="Paisaje 2">
+              <div class="card-body">
+                <h5 class="card-title">Paisaje 2</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Sección para Eventos -->
+      <div id="section-eventos" class="gallery-section">
+        <div class="row">
+          <!-- Ejemplo de imágenes predefinidas para eventos -->
+          <div class="col-md-4 mb-4">
+            <div class="card">
+              <img src="https://via.placeholder.com/350x200?text=Evento+1" class="card-img-top gallery-img" alt="Evento 1">
+              <div class="card-body">
+                <h5 class="card-title">Evento 1</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="card">
+              <img src="https://via.placeholder.com/350x200?text=Evento+2" class="card-img-top gallery-img" alt="Evento 2">
+              <div class="card-body">
+                <h5 class="card-title">Evento 2</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección: Enlaces a Proyectos -->
+    <section id="proyectos" class="mt-5">
+      <h2 class="mb-4">Proyectos</h2>
+      <div class="list-group">
+        <a href="proyecto1.html" class="list-group-item list-group-item-action">
+          Proyecto 1: Sesión Fotográfica de Retratos
+        </a>
+        <a href="proyecto2.html" class="list-group-item list-group-item-action">
+          Proyecto 2: Colección de Paisajes
+        </a>
+        <a href="proyecto3.html" class="list-group-item list-group-item-action">
+          Proyecto 3: Cobertura de Eventos
+        </a>
+      </div>
+    </section>
+  </div>
+
+  <!-- Modal para Agregar Foto -->
+  <div class="modal fade" id="addPhotoModal" tabindex="-1" role="dialog" aria-labelledby="addPhotoModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="addPhotoModalLabel">Agregar Foto</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Cerrar">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form id="addPhotoForm">
+            <div class="form-group">
+              <label for="photoCategory">Categoría</label>
+              <select class="form-control" id="photoCategory">
+                <option value="retratos">Retratos</option>
+                <option value="paisajes">Paisajes</option>
+                <option value="eventos">Eventos</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="photoFile">Subir Archivo</label>
+              <input type="file" class="form-control-file" id="photoFile" accept="image/*">
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+          <button type="button" class="btn btn-primary" id="savePhotoButton">Guardar Foto</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS y jQuery -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Custom JS -->
+  <script src="script.js"></script>
+</body>
+</html>

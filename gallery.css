@@ -1,0 +1,17 @@
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+.gallery-img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 15px;
+}
+
+.btn-filter {
+  margin: 5px;
+}
+
+.gallery-section {
+  margin-bottom: 30px;
+}
